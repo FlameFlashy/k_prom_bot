@@ -1,6 +1,6 @@
 APP=$(shell basename $(shell git remote get-url origin))
 REGISTRY=dmitriysokolov
-VERSION=$(shell git describe --tags --abbrev=0)-$(shell git rev-parse --short HEAD)
+VERSION=$(shell git describe --tags --abbrev=0)$(shell git rev-parse --short HEAD)
 TARGETOS=linux #linux darwin windows
 TARGETARCH=amd64 #arm64
 
@@ -28,3 +28,4 @@ push:
 
 clean:
 	rm -rf k_prom_bot
+	docker rmi ${REGISTRY}/${APP}:${VERSION}-${TARGETARCH}
