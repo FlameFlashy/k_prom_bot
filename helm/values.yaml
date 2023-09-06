@@ -6,7 +6,7 @@ replicaCount: 1
 image:
   repository: ghcr.io/flameflashy
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.0.4-3768a88"
+  tag: "v1.0.4-da27122"
   arch: amd64
 secret:
   name: kprombot
