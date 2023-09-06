@@ -7,7 +7,7 @@ image:
   repository: ghcr.io/flameflashy
   name: k_prom_bot
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1.0.4-8502189"
+  tag: "v1.0.4-58822b0"
   arch: amd64
 secret:
   name: kprombot
